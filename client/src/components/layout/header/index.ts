@@ -1,3 +1,3 @@
-import { Header } from './Header';
+import { NavHeader } from "./Header";
 
-export { Header };
+export { NavHeader };
