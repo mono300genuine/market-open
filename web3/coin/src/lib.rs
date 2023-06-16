@@ -1,14 +1,10 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+#![no_std]
 
 #[cfg(test)]
-mod tests {
-    use super::*;
+mod tests;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+#[cfg(not(feature = "binary-vendor"))]
+mod contract;
+
+#[cfg(feature = "binary-vendor")]
+include!(concat!(env!("OUT_DIR"), "/wasm_binary.rs"));
