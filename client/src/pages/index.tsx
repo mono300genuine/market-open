@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './home/Home';
-import { Products } from './products/index';
+import  {Products} from './products/Products';
 
 const routes = [{ path: '/', Page: Home }, {path: '/products', Page: Products}];
 

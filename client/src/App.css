@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  flex: 1;
+  padding: 30px 0 60px;
+  position: relative;
+}
+
+#root {
+  background-color: rgb(248 250 252);
+  font-weight:400;
+
+}

@@ -3,6 +3,7 @@ import  lock from "assets/images/Lock.png";
 
 function Home(){
   return (
+    <div>
     <Flex
       gap="md"
       justify="center"
@@ -18,10 +19,11 @@ function Home(){
       wrap="wrap"
     >
         <Text c="black">Sell and buy your items through BlockChain</Text>
-        <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>Indigo cyan</Button>
+        <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>Buy Now</Button>
         </Flex>
         <Image src={lock} maw={340}/>
         </Flex>
+        </div>
     );
 }
 

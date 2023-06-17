@@ -2,7 +2,7 @@ import { useApi, useAccount } from "@gear-js/react-hooks";
 import { Routing } from "pages";
 import { NavHeader, Footer, ApiLoader } from "components";
 import { withProviders } from "hocs";
-import "App.scss";
+import "App.css";
 
 function Component() {
   const { isApiReady } = useApi();
@@ -22,7 +22,6 @@ function Component() {
     <>
       <NavHeader links={links} />
       <main>{isAppReady ? <Routing /> : <ApiLoader />}</main>
-      <Footer />
     </>
   );
 }
