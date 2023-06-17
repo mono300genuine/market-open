@@ -137,8 +137,14 @@ export function NavHeader(
 
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
-      <Container className={classes.header}>
-        <img src={Logo} alt="Logo" className="logo" width="300px" />
+      <div className="flex max-h-full justify-center items-center gap-2">
+        {/* <Container className={classes.header}> */}
+        <img
+          src={Logo}
+          alt="Logo"
+          className="logo object-cover"
+          width="300px"
+        />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
@@ -156,7 +162,11 @@ export function NavHeader(
           )}
         </Transition>
         <Account />
-      </Container>
+        <div className="px-4 rounded-lg font-bold text-white bg-blue-300 text-center hover:bg-blue-200 cursor-pointer flex justify-center items-center h-fit py-2">
+          <h1>Get Coins!</h1>
+        </div>
+      </div>
+      {/* </Container> */}
     </Header>
   );
 }
