@@ -1,5 +1,5 @@
 function Profile() {
-  return <div>hola profileasdfas</div>;
+  return <div>hola perfil2</div>;
 }
 
 export { Profile };
