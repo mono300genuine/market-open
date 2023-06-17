@@ -10,7 +10,7 @@ import {
   rem,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Account } from "./account";
 import Logo from "./OpenMarket idea 2.png";
 
@@ -117,21 +117,22 @@ export function NavHeader(
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
 
+  const onClick = () => {};
+
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
+      to={link.link}
       className={cx(classes.link, {
         [classes.linkActive]: active === link.link,
       })}
       onClick={(event) => {
-        event.preventDefault();
         setActive(link.link);
         close();
       }}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (

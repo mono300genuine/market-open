@@ -6,11 +6,6 @@ import "./Home.css";
 import graph from "./Graph.png";
 
 function Home() {
-  <style>
-    @import
-    url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
-  </style>;
-
   const navigate = useNavigate();
   const navigateToHome = () => {
     navigate("/products");
