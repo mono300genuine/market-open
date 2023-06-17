@@ -19,7 +19,7 @@ function Component() {
   const isAppReady = isApiReady && isAccountReady;
 
   return (
-    <>
+    <> 
       <NavHeader links={links} />
       <main>{isAppReady ? <Routing /> : <ApiLoader />}</main>
     </>

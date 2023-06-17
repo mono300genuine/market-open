@@ -10,8 +10,10 @@ import {
   rem,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import {useNavigate} from 'react-router-dom'
 import { Account } from "./account";
 import Logo from "./OpenMarket idea 2.png";
+
 
 const HEADER_HEIGHT = rem(60);
 
@@ -127,10 +129,11 @@ export function NavHeader(
     </a>
   ));
 
+  const navigate = useNavigate()
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <img src={Logo} alt="Logo" className="logo" width="300px" />;
+        <img src={Logo} alt="Logo" className="logo" width="300px" />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
