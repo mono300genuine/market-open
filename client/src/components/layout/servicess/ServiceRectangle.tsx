@@ -5,7 +5,7 @@ interface Props {
   price: number;
 }
 
-function Product({ name, photo, price }: Props) {
+function Service({ name, photo, price }: Props) {
   return (
     <div className=" rounded-2xl drop-shadow-lg bg-white w-[340px] flex flex-col items-center max-h-[600px]">
       <img
@@ -31,4 +31,4 @@ function Product({ name, photo, price }: Props) {
   );
 }
 
-export { Product };
+export { Service };
