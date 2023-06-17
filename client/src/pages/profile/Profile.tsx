@@ -27,7 +27,7 @@ function Profile() {
       </div>
 
       <hr />
-      <div className="RecentlyDone"></div>
+      <div className="RecentlyDone">ol</div>
     </div>
   );
 }

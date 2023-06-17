@@ -9,5 +9,5 @@
 main {
   flex: 1;
   padding: 0px 0 60px;
-  position: relative; // for loaders
+  position: relative;
 }
