@@ -1,0 +1,15 @@
+h2 {
+  color: black;
+}
+
+.Account1 {
+  display: flex;
+  padding-top: 5.5%;
+  align-items: center;
+  padding-left: 12%;
+}
+
+.Account {
+  padding-left: 2%;
+  font-size: xx-small;
+}

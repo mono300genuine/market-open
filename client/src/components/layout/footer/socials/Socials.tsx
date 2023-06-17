@@ -1,14 +1,14 @@
-import { ReactComponent as Twitter } from 'assets/images/socials/twitter.svg';
-import { ReactComponent as Github } from 'assets/images/socials/github.svg';
-import { ReactComponent as Discord } from 'assets/images/socials/discord.svg';
-import { ReactComponent as Medium } from 'assets/images/socials/medium.svg';
-import styles from './Socials.module.scss';
+import Twitter from "./twitter-128.png";
+import Discord from "./discord-2-128.png";
+import Facebook from "./facebook-48.png";
+import Insta from "./InstaLogo.png";
+import "./Socials.css";
 
 const socials = [
-  { href: 'https://twitter.com/gear_techs', icon: Twitter },
-  { href: 'https://github.com/gear-tech', icon: Github },
-  { href: 'https://discord.com/invite/7BQznC9uD9', icon: Discord },
-  { href: 'https://medium.com/@gear_techs', icon: Medium },
+  { href: "https://twitter.com/gear_techs", icon: Twitter },
+  { href: "https://github.com/gear-tech", icon: Facebook },
+  { href: "https://discord.com/invite/7BQznC9uD9", icon: Discord },
+  { href: "https://medium.com/@gear_techs", icon: Insta },
 ];
 
 function Socials() {
@@ -21,7 +21,22 @@ function Socials() {
       </li>
     ));
 
-  return <ul className={styles.socials}>{getItems()}</ul>;
+  return (
+    <div className="Socials">
+      <div className="redes">
+        <img src={Twitter} alt="TwitterLogo" width="35px" />
+      </div>
+      <div className="redes">
+        <img src={Facebook} alt="TwitterLogo" width="35px" />
+      </div>
+      <div className="redes">
+        <img src={Insta} alt="TwitterLogo" width="35px" />
+      </div>
+      <div className="redes">
+        <img src={Discord} alt="TwitterLogo" width="35px" />
+      </div>
+    </div>
+  );
 }
 
 export { Socials };

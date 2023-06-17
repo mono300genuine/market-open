@@ -1,4 +1,4 @@
-import { Header, Footer } from './layout';
-import { ApiLoader, Loader } from './loaders';
+import { NavHeader, Footer } from "./layout";
+import { ApiLoader, Loader } from "./loaders";
 
-export { Header, Footer, ApiLoader, Loader };
+export { NavHeader, Footer, ApiLoader, Loader };

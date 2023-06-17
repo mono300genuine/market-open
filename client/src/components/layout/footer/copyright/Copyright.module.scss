@@ -1,5 +1,7 @@
-@use '@gear-js/ui/variables' as *;
+@use "@gear-js/ui/variables" as *;
 
 .copyright {
-  color: $textColorSecondary;
+  color: #f5f5f5;
+  font-weight: bolder;
+  font-size: large;
 }

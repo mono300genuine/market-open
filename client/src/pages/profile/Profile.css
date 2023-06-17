@@ -1,0 +1,36 @@
+.img {
+  width: 100%;
+}
+
+hr {
+  color: #ebebeb;
+  background-color: #ebebeb;
+}
+
+.ImagePFP {
+  padding-left: 50px;
+}
+
+.PFPcss {
+  position: absolute;
+  margin-top: -210px;
+  margin-left: 20px;
+}
+
+.Data {
+  padding-top: 4%;
+  padding-left: 7.5%;
+  display: flex;
+}
+
+.ACC {
+  width: 500px;
+}
+
+.Bal {
+  width: 500px;
+  align-items: right;
+  justify-content: right;
+  right: 0;
+  padding-top: 4%;
+}
