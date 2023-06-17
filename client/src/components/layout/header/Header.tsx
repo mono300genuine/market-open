@@ -9,10 +9,9 @@ import {
   Transition,
   rem,
 } from "@mantine/core";
-import { Account } from "./account";
 import { useDisclosure } from "@mantine/hooks";
 import { Logo } from "./logo";
-import React from "react";
+import { Account } from "./account";
 
 const HEADER_HEIGHT = rem(60);
 
@@ -129,21 +128,20 @@ export function NavHeader(
   ));
 
   return (
-    <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
+    <Header height={HEADER_HEIGHT}  className={classes.root}>
       <Container className={classes.header}>
         <Logo />
 
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
-
         <Burger
           opened={opened}
           onClick={toggle}
           className={classes.burger}
           size="sm"
         />
-
+ 
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>

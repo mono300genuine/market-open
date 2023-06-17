@@ -9,9 +9,11 @@ function Component() {
   const { isAccountReady } = useAccount();
 
   const links = [
-    { link: "/", label: "Inicio" },
-    { link: "/acerca", label: "Acerca de" },
-    { link: "/contacto", label: "Contacto" },
+    { link: "/", label: "Home" },
+    { link: "/products", label: "Products" },
+    { link: "/services", label: "Services" },
+    { link: "/sales", label: "Sales" },
+    { link: "/profile", label: "Profile" },
   ];
 
   const isAppReady = isApiReady && isAccountReady;
