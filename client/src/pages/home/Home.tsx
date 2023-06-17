@@ -1,5 +1,5 @@
 import { Text, Button, Flex, Image } from "@mantine/core";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import lock from "assets/images/Lock.png";
 import "./Home.css";
@@ -32,14 +32,19 @@ function Home() {
               Sell and buy your items through BlockChain
             </Text>
 
-            <Button
+            {/* <Button
               onClick={navigateToHome}
               className="ButtonLanding"
               variant="gradient"
               gradient={{ from: "indigo", to: "cyan" }}
+            > */}
+            <Link
+              to="/products"
+              className="px-2 py-3 text-white rounded-lg shadow-md bg-blue-300 flex items-center justify-center text-center uppercase hover:bg-blue-500 cursor-pointer"
             >
               Go Buy
-            </Button>
+            </Link>
+            {/* </Button> */}
           </div>
         </Flex>
         <Image src={lock} maw={340} />
