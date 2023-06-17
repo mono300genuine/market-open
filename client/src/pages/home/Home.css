@@ -20,7 +20,12 @@
   margin-top: 90px;
   padding-top: 50px;
   height: 150px;
+  color: #ffffff;
   background-color: #252525;
+}
+
+.SecondLanding h1 {
+  color: #ffffff;
 }
 
 .thirdpart {
