@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   createStyles,
   Header,
@@ -23,6 +24,7 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: "relative",
     zIndex: 1,
+    marginTop: 0,
   },
 
   dropdown: {
@@ -106,6 +108,11 @@ export function NavHeader(
   { links }: HeaderResponsiveProps,
   { isAccountVisible }: Props
 ) {
+  const navigate = useNavigate();
+  const navigateToHome = () => {
+    navigate("/");
+  };
+
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
@@ -130,7 +137,13 @@ export function NavHeader(
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <img src={Logo} alt="Logo" className="logo" width="300px" />
+        <img
+          onClick={navigateToHome}
+          src={Logo}
+          alt="Logo"
+          className="logo"
+          width="300px"
+        />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

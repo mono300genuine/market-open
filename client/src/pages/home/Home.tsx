@@ -1,9 +1,21 @@
 import { Text, Button, Flex, Image } from "@mantine/core";
+import { useNavigate } from "react-router-dom";
+
 import lock from "assets/images/Lock.png";
 import "./Home.css";
 import graph from "./Graph.png";
 
 function Home() {
+  <style>
+    @import
+    url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  </style>;
+
+  const navigate = useNavigate();
+  const navigateToHome = () => {
+    navigate("/products");
+  };
+
   return (
     <div className="Home">
       <Flex
@@ -26,6 +38,7 @@ function Home() {
             </Text>
 
             <Button
+              onClick={navigateToHome}
               className="ButtonLanding"
               variant="gradient"
               gradient={{ from: "indigo", to: "cyan" }}

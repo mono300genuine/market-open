@@ -22,6 +22,7 @@ function Component() {
     <>
       <NavHeader links={links} />
       <main>{isAppReady ? <Routing /> : <ApiLoader />}</main>
+      <Footer />
     </>
   );
 }
