@@ -1,9 +1,9 @@
+use app_io::TransactionsMetadata;
 use gear_wasm_builder::WasmBuilder;
 use gmeta::Metadata;
-use nft_io::NFTMetadata;
 
 fn main() {
-    WasmBuilder::with_meta(NFTMetadata::repr())
-        .exclude_features(["binary-vendor"])
+    WasmBuilder::with_meta(TransactionsMetadata::repr())
+        .exclude_features(vec!["binary-vendor"])
         .build();
 }
