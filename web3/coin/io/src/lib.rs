@@ -42,8 +42,7 @@ pub enum FTAction {
     BalanceOf(ActorId),
 }
 
-#[derive(Debug, Encode, Decode, TypeInfo)]
-#[codec(crate = gstd::codec)]
+#[derive(Debug, Encode, Decode, TypeInfo)] #[codec(crate = gstd::codec)]
 #[scale_info(crate = gstd::scale_info)]
 pub enum FTEvent {
     Transfer {

@@ -1,1 +1,1 @@
-target/wasm32-unknown-unknown/release/fungible_token
+target/wasm32-unknown-unknown/debug/fungible_token
