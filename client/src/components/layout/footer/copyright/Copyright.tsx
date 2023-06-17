@@ -1,9 +1,9 @@
-import styles from './Copyright.module.scss';
+import styles from "./Copyright.module.scss";
 
 function Copyright() {
   const year = new Date().getFullYear();
 
-  return <small className={styles.copyright}>{year}. All rights reserved.</small>;
+  return <small className={styles.copyright}>Copyright © {year}</small>;
 }
 
 export { Copyright };

@@ -10,8 +10,8 @@ import {
   rem,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { Logo } from "./logo";
 import { Account } from "./account";
+import Logo from "./OpenMarket idea 2.png";
 
 const HEADER_HEIGHT = rem(60);
 
@@ -128,10 +128,9 @@ export function NavHeader(
   ));
 
   return (
-    <Header height={HEADER_HEIGHT}  className={classes.root}>
+    <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <Logo />
-
+        <img src={Logo} alt="Logo" className="logo" width="300px" />;
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
@@ -141,7 +140,6 @@ export function NavHeader(
           className={classes.burger}
           size="sm"
         />
- 
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>

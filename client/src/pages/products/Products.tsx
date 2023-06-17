@@ -1,5 +1,5 @@
 function Products() {
-    return <div>hola</div>;
+  return <div>hola products</div>;
 }
-  
+
 export { Products };
