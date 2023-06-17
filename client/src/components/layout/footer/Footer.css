@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 5%;
+  position: relative;
+  bottom: 0;
 }
 
 h3 {
