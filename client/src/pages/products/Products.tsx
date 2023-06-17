@@ -13,30 +13,30 @@ function Products() {
     <div className="flex flex-col gap-5 px-5 py-10">
       <div className="flex flex-row gap-5">
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Mouse Chido" photo={mouse} price={100} />
+          <Product name="Mouse" photo={mouse} price={100} />
         </div>
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Boing de Mango" photo={boing} price={100} />
+          <Product name="Mango Boing" photo={boing} price={100} />
         </div>
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Pomada de la Campana" photo={campana} price={100} />
+          <Product name="Pomada" photo={campana} price={100} />
         </div>
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Camiseta" photo={camiseta} price={100} />
+          <Product name="T-shirt" photo={camiseta} price={100} />
         </div>
       </div>
       <div className="flex flex-row gap-5">
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Silla" photo={silla} price={100} />
+          <Product name="Chair" photo={silla} price={100} />
         </div>
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Almohada" photo={almohada} price={100} />
+          <Product name="Pillow" photo={almohada} price={100} />
         </div>
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Alcancia   " photo={alcancia} price={100} />
+          <Product name="Piggy bank" photo={alcancia} price={100} />
         </div>
         <div className="text-center  font-Varela font-semibold">
-          <Product name="Tenis Adidas" photo={tenis} price={100} />
+          <Product name="Adidas Tenis" photo={tenis} price={100} />
         </div>
       </div>
     </div>
