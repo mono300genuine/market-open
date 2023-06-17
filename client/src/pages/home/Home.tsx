@@ -1,30 +1,52 @@
-import { Text, Button, Flex, Image } from '@mantine/core';
-import  lock from "assets/images/Lock.png";
+import { Text, Button, Flex, Image } from "@mantine/core";
+import lock from "assets/images/Lock.png";
+import "./Home.css";
+import graph from "./Graph.png";
 
-function Home(){
+function Home() {
   return (
-    <div>
-    <Flex
-      gap="md"
-      justify="center"
-      align="center"
-      direction="row"
-      wrap="wrap"
-    >
-    <Flex
-      gap="md"
-      justify="center"
-      align="center"
-      direction="column"
-      wrap="wrap"
-    >
-        <Text c="black">Sell and buy your items through BlockChain</Text>
-        <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>Buy Now</Button>
+    <div className="Home">
+      <Flex
+        gap="md"
+        justify="center"
+        align="center"
+        direction="row"
+        wrap="wrap"
+      >
+        <Flex
+          gap="md"
+          justify="center"
+          align="center"
+          direction="column"
+          wrap="wrap"
+        >
+          <div className="MainText">
+            <Text c="black" className="LandingText">
+              Sell and buy your items through BlockChain
+            </Text>
+
+            <Button
+              className="ButtonLanding"
+              variant="gradient"
+              gradient={{ from: "indigo", to: "cyan" }}
+            >
+              Go Buy
+            </Button>
+          </div>
         </Flex>
-        <Image src={lock} maw={340}/>
-        </Flex>
+        <Image src={lock} maw={340} />
+      </Flex>
+      <div className="SecondLanding">
+        <h1>Fast and secure transactions with our currency</h1>
+      </div>
+      <div className="thirdpart">
+        <div className="BalanceText">
+          <h1>Check your balance through Polkadot’s Wallet</h1>
         </div>
-    );
+        <img src={graph} alt="Graph" width="600px" />
+      </div>
+    </div>
+  );
 }
 
 export { Home };

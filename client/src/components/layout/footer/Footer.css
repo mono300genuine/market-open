@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 0px 10spx;
+  border-top: 1px;
+  background-color: #252525;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  position: relative;
+  bottom: 0;
+}
+
+h3 {
+  padding-right: 10px;
+}
