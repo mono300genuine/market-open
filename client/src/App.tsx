@@ -12,7 +12,6 @@ function Component() {
     { link: "/", label: "Home" },
     { link: "/products", label: "Products" },
     { link: "/services", label: "Services" },
-    { link: "/sales", label: "Sales" },
     { link: "/profile", label: "Profile" },
   ];
 
