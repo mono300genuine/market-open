@@ -1,5 +1,11 @@
-function Products() {
-  return <div>hola products</div>;
-}
+import {Product} from "components/layout/product/ProductRectangle";
 
-export { Products };
+function Products(){
+    return (
+        <div className="text-center mx-7 font-Varela font-semibold">
+            <Product />
+        </div>
+    );
+};
+
+export { Products};

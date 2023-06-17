@@ -1,12 +1,10 @@
-import { Route, Routes } from "react-router-dom";
-import { Home } from "./home/Home";
-import { Products } from "./products/index";
-import { Profile } from "./profile/index";
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './home/Home';
+import  {Products} from './products/Products';
 
 const routes = [
   { path: "/", Page: Home },
   { path: "/products", Page: Products },
-  { path: "/Profile", Page: Profile },
   { path: "/sales", Page: Products },
 ];
 
